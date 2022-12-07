@@ -8,6 +8,10 @@ from git_pipeline.graph import *
 
 def pipeline(spark: SparkSession) -> None:
     df_csv1 = csv1(spark)
+    df_Filter_1 = Filter_1(spark, df_csv1)
+    df_RowDistributor_1_out0, df_RowDistributor_1_out1 = RowDistributor_1(spark, df_Filter_1)
+    df_Subgraph_1 = Subgraph_1(spark, df_RowDistributor_1_out0)
+    df_RestAPIEnrich_1 = RestAPIEnrich_1(spark, df_RowDistributor_1_out1)
 
 def main():
     spark = SparkSession.builder\

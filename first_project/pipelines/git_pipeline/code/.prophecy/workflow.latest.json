@@ -43,16 +43,116 @@
     },
     "topLevelPackage" : "git_pipeline"
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "7_-_b66bEqwkGFU2LP4mr",
+    "source" : "tsy0Lqbfj_NDKxgJIBdrW$$LbAlkO2vIc3cLteNO71sw",
+    "sourcePort" : "XnldyoBRXrs647jZYtYtR$$8uWSjaS834ZNcc5yIZH9Z",
+    "target" : "KhBWv7AQ476MDGwsPubD8$$GiiZEg7V5PVozDwFkYs3P",
+    "targetPort" : "k37QHSpq27B2PwDcR-zdE$$V204Y88nH-IZGpGNNImG9"
+  }, {
+    "id" : "VSs2rscFkkRROVOt1qPK7",
+    "source" : "KhBWv7AQ476MDGwsPubD8$$GiiZEg7V5PVozDwFkYs3P",
+    "sourcePort" : "EvSrYoAn4bIlsOpxaMsjH$$XsQjdFpw6haPOKD2vW4R_",
+    "target" : "UWHt6ErjB-E4NLmUdWAVE$$RRB9zikP1ogDnr-cpT2sR",
+    "targetPort" : "3oFm0OxK1uvwedyygfZ-O$$nZ1XkZg54IfUTrPPq7cl3"
+  }, {
+    "id" : "pxq99G3WguA3UMHcuraks",
+    "source" : "UWHt6ErjB-E4NLmUdWAVE$$RRB9zikP1ogDnr-cpT2sR",
+    "sourcePort" : "V_CymCt1LAxaPGE5JBVts$$UDuqI7n1UVdShfaG2nnSE",
+    "target" : "7q5hwB_EIua3m_aG6I3m8$$BcTgIwnv-p1c0Pa_v4dPH",
+    "targetPort" : "GPALq2nXe1zziMJkwmCqD$$0HLihAn-pzd-e6nCIQB9u"
+  }, {
+    "id" : "-dcqskX2VhdlZi1_DRR7z",
+    "source" : "UWHt6ErjB-E4NLmUdWAVE$$RRB9zikP1ogDnr-cpT2sR",
+    "sourcePort" : "DPzhlX0vuEEZMpKCgCw8P$$6RpLJO4OgSiEuOPpP-4QY",
+    "target" : "DoLfdeWArOJhehuTBqM21$$WFrhGcHH-sTiEbngNcI8R",
+    "targetPort" : "oFmsIFvBem_Urcam-ddSL$$AuMcfuRmFZ3UHp7yrbivx"
+  } ],
   "processes" : {
+    "7q5hwB_EIua3m_aG6I3m8$$BcTgIwnv-p1c0Pa_v4dPH" : {
+      "id" : "7q5hwB_EIua3m_aG6I3m8$$BcTgIwnv-p1c0Pa_v4dPH",
+      "component" : "Subgraph",
+      "metadata" : {
+        "label" : "Subgraph_1",
+        "slug" : "Subgraph_1",
+        "x" : 245.20000000000005,
+        "y" : 87.00000000000003,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "GPALq2nXe1zziMJkwmCqD$$0HLihAn-pzd-e6nCIQB9u",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "TkifNYGDRQRqTg38EZLnA$$i9Ok4mLJo32Q7Stv4mxEm",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : { },
+      "connections" : [ ],
+      "processes" : { }
+    },
+    "UWHt6ErjB-E4NLmUdWAVE$$RRB9zikP1ogDnr-cpT2sR" : {
+      "id" : "UWHt6ErjB-E4NLmUdWAVE$$RRB9zikP1ogDnr-cpT2sR",
+      "component" : "RowDistributor",
+      "metadata" : {
+        "label" : "RowDistributor_1",
+        "slug" : "RowDistributor_1",
+        "x" : 0.4000000000000199,
+        "y" : 67.80000000000004,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "3oFm0OxK1uvwedyygfZ-O$$nZ1XkZg54IfUTrPPq7cl3",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "V_CymCt1LAxaPGE5JBVts$$UDuqI7n1UVdShfaG2nnSE",
+          "slug" : "out0"
+        }, {
+          "id" : "DPzhlX0vuEEZMpKCgCw8P$$6RpLJO4OgSiEuOPpP-4QY",
+          "slug" : "out1"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "outports" : [ {
+          "path" : "out0",
+          "id" : "V_CymCt1LAxaPGE5JBVts$$UDuqI7n1UVdShfaG2nnSE",
+          "model" : {
+            "format" : "sql",
+            "expression" : ""
+          }
+        }, {
+          "path" : "out1",
+          "id" : "DPzhlX0vuEEZMpKCgCw8P$$6RpLJO4OgSiEuOPpP-4QY",
+          "model" : {
+            "format" : "sql",
+            "expression" : ""
+          }
+        } ],
+        "distributeUnmatchedRows" : null
+      }
+    },
     "tsy0Lqbfj_NDKxgJIBdrW$$LbAlkO2vIc3cLteNO71sw" : {
       "id" : "tsy0Lqbfj_NDKxgJIBdrW$$LbAlkO2vIc3cLteNO71sw",
       "component" : "Source",
       "metadata" : {
         "label" : "csv1",
         "slug" : "csv1",
-        "x" : 140,
-        "y" : 160,
+        "x" : -628,
+        "y" : -26,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -69,6 +169,101 @@
       },
       "properties" : {
         "datasetId" : "datasets/csv1"
+      }
+    },
+    "KhBWv7AQ476MDGwsPubD8$$GiiZEg7V5PVozDwFkYs3P" : {
+      "id" : "KhBWv7AQ476MDGwsPubD8$$GiiZEg7V5PVozDwFkYs3P",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "slug" : "Filter_1",
+        "x" : -326.79999999999995,
+        "y" : 70.20000000000005,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "k37QHSpq27B2PwDcR-zdE$$V204Y88nH-IZGpGNNImG9",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "EvSrYoAn4bIlsOpxaMsjH$$XsQjdFpw6haPOKD2vW4R_",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "true"
+        }
+      }
+    },
+    "DoLfdeWArOJhehuTBqM21$$WFrhGcHH-sTiEbngNcI8R" : {
+      "id" : "DoLfdeWArOJhehuTBqM21$$WFrhGcHH-sTiEbngNcI8R",
+      "component" : "RestAPIEnrich",
+      "metadata" : {
+        "label" : "RestAPIEnrich_1",
+        "slug" : "RestAPIEnrich_1",
+        "x" : 224.80000000000007,
+        "y" : 244.20000000000005,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "oFmsIFvBem_Urcam-ddSL$$AuMcfuRmFZ3UHp7yrbivx",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "3I7GFHrs-PghSQS3GulNE$$FBqIXtr1JTZ13TuUQRlSQ",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "awaitTime" : null,
+        "method" : "GET",
+        "proxies" : null,
+        "verify" : null,
+        "streamFrom" : null,
+        "headersFrom" : null,
+        "auth" : null,
+        "url" : "https://www.boredapi.com/api/activity",
+        "json" : null,
+        "cert" : null,
+        "data" : null,
+        "params" : null,
+        "allow_redirectsFrom" : null,
+        "authFrom" : null,
+        "proxiesFrom" : null,
+        "files" : null,
+        "awaitTimeFrom" : null,
+        "cookies" : null,
+        "jsonFrom" : null,
+        "urlFrom" : "staticValue",
+        "parseContent" : null,
+        "activeTab" : "basicTab",
+        "allow_redirects" : null,
+        "certFrom" : null,
+        "stream" : null,
+        "filesFrom" : null,
+        "paramsFrom" : null,
+        "dataFrom" : null,
+        "timeoutFrom" : null,
+        "verifyFrom" : null,
+        "headers" : null,
+        "methodFrom" : "staticValue",
+        "timeout" : null,
+        "cookiesFrom" : null
       }
     }
   },
