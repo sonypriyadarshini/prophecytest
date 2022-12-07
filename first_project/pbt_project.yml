@@ -28,6 +28,17 @@ pipelines:
       inputs: []
       outputs: []
     dependencies: {}
+  pipelines/test123:
+    name: test123
+    description: ''
+    author: sonypriyadarshini13@gmail.com
+    mode: batch
+    language: python
+    createdAt: '2022-12-07 04:15:51'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
 datasets:
   datasets/csv1:
     name: csv1
