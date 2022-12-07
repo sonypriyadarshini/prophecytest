@@ -1,6 +1,6 @@
 name: git_new
 description: ''
-version: '0.31'
+version: 0.31-SNAPSHOT
 author: sonypriyadarshini13@gmail.com
 language: python
 buildSystem: wheel
