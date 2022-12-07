@@ -36,7 +36,8 @@ pipelines:
     language: python
     createdAt: '2022-12-07 04:15:51'
     datasets:
-      inputs: []
+      inputs:
+      - datasets/csv
       outputs: []
     dependencies: {}
   pipelines/dev_pipeline:
@@ -64,6 +65,18 @@ datasets:
         description: ''
         author: sonypriyadarshini13@gmail.com
         createdAt: '2022-12-07 04:04:15'
+  datasets/csv:
+    name: csv
+    description: ''
+    author: sonypriyadarshini13@gmail.com
+    createdAt: '2022-12-07 04:27:17'
+    physicalDatasets:
+      dev:
+        fabricId: 1237
+        datasetType: File
+        description: ''
+        author: sonypriyadarshini13@gmail.com
+        createdAt: '2022-12-07 04:27:17'
   datasets/parquetfile:
     name: parquetfile
     description: ''
