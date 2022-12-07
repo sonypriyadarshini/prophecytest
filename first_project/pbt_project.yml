@@ -4,8 +4,32 @@ version: '0.1'
 author: sonypriyadarshini13@gmail.com
 language: python
 buildSystem: wheel
-pipelines: {}
-datasets: {}
+pipelines:
+  pipelines/git_pipeline:
+    name: git_pipeline
+    description: ''
+    author: sonypriyadarshini13@gmail.com
+    mode: batch
+    language: python
+    createdAt: '2022-12-07 03:52:24'
+    datasets:
+      inputs:
+      - datasets/csv1
+      outputs: []
+    dependencies: {}
+datasets:
+  datasets/csv1:
+    name: csv1
+    description: ''
+    author: sonypriyadarshini13@gmail.com
+    createdAt: '2022-12-07 04:04:15'
+    physicalDatasets:
+      dev:
+        fabricId: 1237
+        datasetType: File
+        description: ''
+        author: sonypriyadarshini13@gmail.com
+        createdAt: '2022-12-07 04:04:15'
 templates: {}
 jobs: {}
 libraries: []
