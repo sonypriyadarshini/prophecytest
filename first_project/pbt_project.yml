@@ -40,6 +40,17 @@ pipelines:
       - datasets/csv
       outputs: []
     dependencies: {}
+  pipelines/dev_pipeline:
+    name: dev_pipeline
+    description: ''
+    author: sonypriyadarshini13@gmail.com
+    mode: batch
+    language: python
+    createdAt: '2022-12-07 04:32:26'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
 datasets:
   datasets/csv1:
     name: csv1
