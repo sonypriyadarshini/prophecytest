@@ -7,7 +7,7 @@ from prophecy.utils import *
 from test123.graph import *
 
 def pipeline(spark: SparkSession) -> None:
-    pass
+    df_csv = csv(spark)
 
 def main():
     spark = SparkSession.builder\

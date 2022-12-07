@@ -44,7 +44,34 @@
     "topLevelPackage" : "test123"
   },
   "connections" : [ ],
-  "processes" : { },
+  "processes" : {
+    "W7D5moAxrjv6LbKqWhsZ9$$nJ77LOQ-324JIonD1nyuw" : {
+      "id" : "W7D5moAxrjv6LbKqWhsZ9$$nJ77LOQ-324JIonD1nyuw",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "csv",
+        "slug" : "csv",
+        "x" : 140,
+        "y" : 160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "XrT1PY1s9mCFnIkzzhyVD$$Ej4wTp0vhGZhLkHA-VZMN",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/csv"
+      }
+    }
+  },
   "ports" : {
     "inputs" : [ ],
     "outputs" : [ ],
